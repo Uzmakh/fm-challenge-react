@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+body {
+  background-color: hsl(240, 78%, 98%);
+  margin: 0;
+  /* display: flex;
+  flex-direction: column; */
+  /* place-items: center; */
+  /* align-items: center; */
+
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.linear-gradient {
+  background-image: linear-gradient(
+    45deg,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+}
+.btn:hover {
+  background-image: linear-gradient(
+    45deg,
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+}
+
+/*-----------------*\
+    TOGGLE-Styling
+\*-----------------*/
+.toggle-container {
+  color: hsl(232, 13%, 33%);
+  display: flex;
+  padding: 25px;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.toggle-container label {
+  background-image: linear-gradient(
+    45deg,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  width: 60px;
+  height: 30px;
+  border-radius: 50px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle-container label .ball {
+  background-color: hsl(240, 78%, 98%);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+  transition: transform 0.5s ease;
+}
+
+.toggle-container input:checked + label .ball {
+  transform: translateX(30px);
+}
+
+.toggle-container input {
+  display: none;
+}
+
+/* Footer-Note */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-block: 50px 20px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
