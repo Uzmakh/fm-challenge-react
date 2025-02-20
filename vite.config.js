@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base:'/fm-challenge-react.git/'
+  base:'/fm-challenge-react/'
 })
